@@ -1,5 +1,3 @@
-package main;
-
 import java.util.LinkedList;
 import java.util.List;
 class Edge{
@@ -8,6 +6,11 @@ class Edge{
 	public Edge(int endVertex,int weight) {
 		this.endVertex=endVertex;
 		this.weight=weight;
+	}
+	
+	public Edge(int endVertex) {
+		this.endVertex=endVertex;
+		this.weight=-1;
 	}
 	
 	@Override
